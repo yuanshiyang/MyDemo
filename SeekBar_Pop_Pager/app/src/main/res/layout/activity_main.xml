@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/progressbar_bg">
+        <com.example.dreamore.seekbar_pop_pager.MySeekBar
+            android:id="@+id/mySeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:progressDrawable="@drawable/seek_line"
+            android:thumb="@drawable/seek_button"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
